@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(/assets/images/racing-path.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: hidden;
+  }
+
+  #game-container {
+    position: relative;
+    width: 500px;
+    height: 650px;
+    margin: 20px auto;
+    background-image: url(/assets/images/road\ .jpg);
+    border: 5px dotted rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+    background-repeat: repeat-y;
+  }
+  
+  #game-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  #player-car {
+    position: absolute;
+    bottom: 20px;
+    left: 175px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/assets/images/yellow-car.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+
+  .obstacle {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background-image: url(/assets/images/red-car.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+
+  #score-board {
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #game-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  #game-menu button {
+    display: inline-block;
+    padding:10px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color:rgb(199, 135, 16);
+
+    border: none;
+    border-radius: 10px;
+    border-color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+
+#game-menu button:hover {
+    background-color:rgb(119, 79, 4);
+
+  }
